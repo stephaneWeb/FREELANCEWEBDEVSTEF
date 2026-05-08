@@ -1,0 +1,249 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Développeur Symfony Freelance
+{% endblock %}
+
+{% block body %}
+
+	<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+		<div class="container">
+			<a class="navbar-brand fw-bold" href="#">StephDev</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-end" id="navbarMain">
+				<ul class="navbar-nav gap-lg-4">
+					<li class="nav-item">
+						<a class="nav-link" href="#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#portfolio">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="hero-section">
+
+		<div class="container">
+
+			<div class="hero-panel">
+
+				<div class="hero-content">
+
+					<span class="hero-badge">
+						Développeur PHP Symfony
+					</span>
+
+					<h1>
+						Je crée des sites web clairs,
+																																																																																																																																										                    rapides et professionnels.
+					</h1>
+
+					<p>
+						J’aide les indépendants et petites entreprises
+																																																																																																																																										                    à obtenir un site moderne et pensé pour convertir.
+					</p>
+
+					<div class="hero-actions">
+
+						<a href="#contact" class="btn btn-light btn-lg">
+							Discuter de votre projet
+						</a>
+
+						<a href="#services" class="btn btn-outline-light btn-lg">
+
+							Voir mes services
+						</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+	<section id="services" class="services-section">
+		<div class="container">
+
+			<div class="section-heading">
+				<span class="section-badge">Services</span>
+				<h2>Des solutions simples pour un site efficace.</h2>
+				<p>
+					Je vous accompagne de la création à la mise en ligne,
+																																																																																																														                avec un site propre, rapide et pensé pour vos clients.
+				</p>
+			</div>
+
+			<div class="row g-4">
+				<div class="col-md-4">
+					<div class="service-card">
+						<h3>Site vitrine</h3>
+						<p>
+							Un site clair et professionnel pour présenter votre activité
+																																																																																																																																																										                        et donner confiance à vos visiteurs.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="service-card">
+						<h3>Refonte</h3>
+						<p>
+							Modernisation d’un site existant : design, vitesse,
+																																																																																																																																																										                        responsive mobile et meilleure clarté.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="service-card">
+						<h3>Symfony sur mesure</h3>
+						<p>
+							Développement d’outils spécifiques : espace admin,
+																																																																																																																																																										                        formulaires, gestion de contenu ou fonctionnalités métier.
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section id="why-me" class="why-section">
+		<div class="container">
+
+			<div class="row align-items-center g-5">
+
+				<div class="col-lg-6">
+					<span class="section-badge">Pourquoi me choisir</span>
+
+					<h2>Un site propre, rapide et pensé pour durer.</h2>
+
+					<p>
+						Je ne crée pas seulement un joli site. Je développe une base solide,
+																																																																																																																														                    claire et maintenable, pensée pour évoluer avec votre activité.
+					</p>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="why-list">
+
+						<div class="why-item fade-right">
+							<strong>Code propre</strong>
+							<span>Une structure claire avec Symfony, facile à maintenir.</span>
+						</div>
+
+						<div class="why-item fade-right">
+							<strong>Responsive mobile</strong>
+							<span>Un site agréable à consulter sur ordinateur, tablette et mobile.</span>
+						</div>
+
+						<div class="why-item fade-right">
+							<strong>Performance</strong>
+							<span>Un site rapide, léger et optimisé pour une meilleure expérience utilisateur.</span>
+						</div>
+
+						<div class="why-item fade-right">
+							<strong>Accompagnement</strong>
+							<span>Je vous aide à comprendre les choix techniques et la mise en ligne.</span>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<section id="portfolio" class="portfolio-section">
+		<div class="container">
+
+			<div class="section-heading fade-up">
+				<span class="section-badge">Avant / Après</span>
+
+				<h2>Refonte complète d’un projet web.</h2>
+
+				<p>
+					Modernisation du design, amélioration de l’expérience utilisateur,
+																				                responsive mobile et développement Symfony.
+				</p>
+			</div>
+
+			<div class="portfolio-card fade-up">
+
+				<div class="row g-4">
+
+					<div class="col-lg-6">
+						<div class="project-card">
+							<span class="project-state old">Ancienne version</span>
+
+							<div class="project-image">
+								<img src="{{ asset('images/ancien-site.webp') }}" alt="Ancienne version Deux Traits Une Fille">
+							</div>
+
+							<div class="project-link">
+								<a href="https://deux-traits-une-fille.fr" target="_blank" class="project-btn old-btn">
+									Voir l’ancienne version
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="project-card">
+							<span class="project-state new">Nouvelle version</span>
+
+							<div class="project-image">
+								<img src="{{ asset('images/projet-deuxtraits.webp') }}" alt="Nouvelle version Deux Traits Une Fille">
+							</div>
+
+							<div class="project-link">
+								<a href="https://deuxtraitsunefille.fr" target="_blank" class="project-btn new-btn">
+									Voir la nouvelle version
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="project-details">
+					<span class="project-label">Projet Symfony</span>
+
+					<h3>Site complet avec espace administrateur.</h3>
+
+					<p>
+						Refonte complète d’un site professionnel avec gestion de contenu,
+																								                    blog SEO, commentaires, responsive mobile, backoffice EasyAdmin,
+																								                    déploiement OVH, VPS Ubuntu et sécurité serveur.
+					</p>
+
+					<div class="project-tags">
+						<span>Backoffice EasyAdmin</span>
+						<span>Blog SEO</span>
+						<span>Commentaires</span>
+						<span>Déploiement OVH</span>
+						<span>VPS Ubuntu</span>
+						<span>Sécurité serveur</span>
+					</div>
+
+					<div class="portfolio-link">
+						<a href="https://deuxtraitsunefille.fr" target="_blank" class="portfolio-btn">
+							Voir le projet en ligne
+						</a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+{% endblock %}

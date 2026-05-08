@@ -1,3 +1,6 @@
+@import "~bootstrap/scss/bootstrap";
+
 body {
-    background-color: skyblue;
+    background: #f8fafc;
+    color: #111827;
 }
