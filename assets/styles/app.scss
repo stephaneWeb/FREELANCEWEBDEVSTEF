@@ -360,7 +360,10 @@ body::before {
     margin-bottom: 56px;
 }
 
-/* Badge section */
+/* =========================================================
+   SECTION BADGE DEFAULT
+========================================================= */
+
 .section-badge {
     display: inline-flex;
 
@@ -722,14 +725,6 @@ body::before {
    BADGES PORTFOLIO LIGHT
 ========================================================= */
 
-.section-badge,
-.project-label {
-    background: rgba(255,255,255,.12);
-
-    color: white;
-
-    border: 1px solid rgba(255,255,255,.18);
-}
 
 /* Badge ancienne version */
 .project-state.old {
@@ -965,4 +960,1174 @@ body::before {
 /* Titre dans la card blanche du projet */
 .project-details h3 {
     color: #111827 !important;
+}
+/* =========================================================
+   PROCESS SECTION
+========================================================= */
+
+.process-section {
+    padding: 140px 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8f5ff 100%
+        );
+}
+
+
+/* =========================================================
+   PROCESS GRID
+========================================================= */
+
+.process-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+
+    margin-top: 70px;
+}
+
+
+/* =========================================================
+   PROCESS CARD
+========================================================= */
+
+.process-card {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 40px;
+
+    border-radius: 32px;
+
+    background: rgba(255,255,255,.72);
+
+    border: 1px solid rgba(17,24,39,.06);
+
+    box-shadow:
+        0 24px 70px rgba(15,23,42,.08);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+/* Hover card */
+.process-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 34px 90px rgba(15,23,42,.12);
+}
+
+
+/* =========================================================
+   PROCESS NUMBER
+========================================================= */
+
+.process-number {
+    font-size: 4rem;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: -.06em;
+
+    margin-bottom: 24px;
+
+    color: rgba(124,58,237,.16);
+}
+
+
+/* =========================================================
+   PROCESS TITLE
+========================================================= */
+
+.process-card h3 {
+    font-size: 1.4rem;
+
+    font-weight: 800;
+
+    margin-bottom: 18px;
+
+    color: #111827;
+}
+
+
+/* =========================================================
+   PROCESS TEXT
+========================================================= */
+
+.process-card p {
+    color: #4b5563;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-card {
+        padding: 32px;
+    }
+
+}
+/* =========================================================
+   CONTACT SECTION
+========================================================= */
+
+.contact-section {
+    padding: 140px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #7c3aed,
+            #a855f7,
+            #ec4899
+        );
+}
+
+
+/* =========================================================
+   CONTACT PANEL
+========================================================= */
+
+.contact-panel {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 90px;
+
+    border-radius: 40px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,.10);
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,.18);
+
+    box-shadow:
+        0 30px 90px rgba(30,27,75,.35);
+}
+
+
+/* Glow contact */
+.contact-panel::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -120px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,.28),
+            transparent 65%
+        );
+
+    filter: blur(80px);
+
+    z-index: -1;
+}
+
+
+/* =========================================================
+   CONTACT CONTENT
+========================================================= */
+
+.contact-badge {
+    display: inline-flex;
+
+    margin-bottom: 22px;
+
+    padding: 10px 18px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.14);
+
+    color: white;
+
+    font-weight: 800;
+}
+
+
+/* Titre contact */
+.contact-panel h2 {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: -.05em;
+
+    color: white;
+
+    margin-bottom: 28px;
+}
+
+
+/* Texte contact */
+.contact-panel p {
+    max-width: 760px;
+
+    margin: 0 auto 40px;
+
+    font-size: 1.18rem;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,.84);
+}
+
+
+/* =========================================================
+   CONTACT BUTTONS
+========================================================= */
+
+.contact-actions {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 16px;
+
+    flex-wrap: wrap;
+}
+
+/* =========================================================
+   PRICING SECTION
+========================================================= */
+
+.pricing-section {
+    padding: 140px 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8f5ff 100%
+        );
+}
+
+
+/* =========================================================
+   PRICING GRID
+========================================================= */
+
+.pricing-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+
+    margin-top: 70px;
+}
+
+
+/* =========================================================
+   PRICING CARD
+========================================================= */
+
+.pricing-card {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 42px;
+
+    border-radius: 32px;
+
+    background: white;
+
+    border: 1px solid rgba(17,24,39,.06);
+
+    box-shadow:
+        0 24px 70px rgba(15,23,42,.08);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+/* Hover */
+.pricing-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 34px 90px rgba(15,23,42,.12);
+}
+
+
+/* =========================================================
+   FEATURED CARD
+========================================================= */
+
+.pricing-card.featured {
+    background:
+        linear-gradient(
+            135deg,
+            #7c3aed,
+            #a855f7
+        );
+
+    color: white;
+
+    transform: scale(1.04);
+}
+
+/* Badge populaire */
+.featured-badge {
+    position: absolute;
+
+    top: 22px;
+    right: 22px;
+
+    padding: 8px 14px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.16);
+
+    font-size: .85rem;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TEXT PRICING
+========================================================= */
+
+.pricing-type {
+    display: inline-flex;
+
+    margin-bottom: 22px;
+
+    font-weight: 700;
+
+    color: #7c3aed;
+}
+
+/* Prix */
+.pricing-price {
+    font-size: 2.8rem;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    margin-bottom: 24px;
+}
+
+/* Texte */
+.pricing-card p {
+    line-height: 1.8;
+
+    color: #4b5563;
+}
+
+/* Texte card featured */
+.pricing-card.featured p,
+.pricing-card.featured .pricing-type {
+    color: rgba(255,255,255,.9);
+}
+
+
+/* =========================================================
+   FEATURES LIST
+========================================================= */
+
+.pricing-features {
+    display: grid;
+
+    gap: 14px;
+
+    margin-top: 30px;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+/* Item feature */
+.pricing-features li {
+    position: relative;
+
+    padding-left: 24px;
+
+    color: #374151;
+}
+
+/* Puce */
+.pricing-features li::before {
+    content: "•";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #7c3aed;
+
+    font-weight: 900;
+}
+
+/* Features featured */
+.pricing-card.featured .pricing-features li {
+    color: rgba(255,255,255,.92);
+}
+
+.pricing-card.featured .pricing-features li::before {
+    color: white;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card.featured {
+        transform: none;
+    }
+
+}
+/* =========================================================
+   CONTACT RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .contact-panel {
+        padding: 50px 28px;
+    }
+
+    .contact-actions {
+        flex-direction: column;
+    }
+
+    .contact-actions .btn {
+        width: 100%;
+    }
+
+}
+/* =========================================================
+   HERO AVATAR
+========================================================= */
+
+.hero-avatar-wrapper {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glow derrière avatar */
+.hero-avatar-wrapper::before {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(168,85,247,.45),
+            transparent 70%
+        );
+
+    filter: blur(40px);
+
+    z-index: 0;
+}
+
+/* Image avatar */
+.hero-avatar {
+    position: relative;
+
+    z-index: 2;
+
+    width: 320px;
+
+    max-width: 100%;
+
+    animation: floatAvatar 5s ease-in-out infinite;
+
+    filter:
+        drop-shadow(0 20px 40px rgba(0,0,0,.35));
+}
+
+
+/* =========================================================
+   FLOAT ANIMATION
+========================================================= */
+
+@keyframes floatAvatar {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+/* =========================================================
+   HERO AVATAR RESPONSIVE + GLOW
+========================================================= */
+
+.hero-avatar-wrapper {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Glow violet derrière l’avatar */
+.hero-avatar-wrapper::before {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(168,85,247,.45),
+            transparent 70%
+        );
+
+    filter: blur(35px);
+
+    z-index: 0;
+}
+
+/* Image avatar */
+.hero-avatar {
+    position: relative;
+
+    z-index: 2;
+
+    width: 280px;
+
+    max-width: 100%;
+
+    filter:
+        drop-shadow(0 20px 40px rgba(0,0,0,.35));
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .hero-avatar {
+        width: 190px;
+
+        margin-top: 32px;
+    }
+
+    .hero-avatar-wrapper::before {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+/* =========================================================
+   STACK SECTION
+========================================================= */
+
+.stack-section {
+    padding: 120px 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #f8f5ff 100%
+        );
+}
+
+
+/* =========================================================
+   STACK GRID
+========================================================= */
+
+.stack-grid {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    margin-top: 60px;
+}
+
+
+/* Badge techno */
+.stack-grid span {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px 24px;
+
+    border-radius: 18px;
+
+    background: white;
+
+    border: 1px solid rgba(17,24,39,.06);
+
+    box-shadow:
+        0 18px 40px rgba(15,23,42,.06);
+
+    font-weight: 700;
+
+    color: #4f46e5;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+/* Hover */
+.stack-grid span:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 24px 55px rgba(124,58,237,.12);
+}
+/* =========================================================
+   MAINTENANCE SECTION
+========================================================= */
+
+.maintenance-section {
+    padding: 140px 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            #f8f5ff 0%,
+            #ffffff 100%
+        );
+}
+
+
+/* =========================================================
+   MAINTENANCE GRID
+========================================================= */
+
+.maintenance-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+
+    margin-top: 70px;
+}
+
+
+/* =========================================================
+   MAINTENANCE CARD
+========================================================= */
+
+.maintenance-card {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 42px;
+
+    border-radius: 32px;
+
+    background: white;
+
+    border: 1px solid rgba(17,24,39,.06);
+
+    box-shadow:
+        0 24px 70px rgba(15,23,42,.08);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+/* Hover */
+.maintenance-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 34px 90px rgba(15,23,42,.12);
+}
+
+
+/* =========================================================
+   FEATURED CARD
+========================================================= */
+
+.maintenance-card.featured {
+    background:
+        linear-gradient(
+            135deg,
+            #7c3aed,
+            #a855f7
+        );
+
+    color: white;
+
+    transform: scale(1.04);
+}
+
+
+/* =========================================================
+   TEXT MAINTENANCE
+========================================================= */
+
+.maintenance-type {
+    display: inline-flex;
+
+    margin-bottom: 22px;
+
+    font-weight: 700;
+
+    color: #7c3aed;
+}
+
+/* Prix */
+.maintenance-price {
+    font-size: 2.6rem;
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    margin-bottom: 28px;
+}
+
+/* Texte featured */
+.maintenance-card.featured .maintenance-type {
+    color: rgba(255,255,255,.9);
+}
+
+
+/* =========================================================
+   FEATURES LIST
+========================================================= */
+
+.maintenance-features {
+    display: grid;
+
+    gap: 14px;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+/* Item */
+.maintenance-features li {
+    position: relative;
+
+    padding-left: 24px;
+
+    color: #374151;
+}
+
+/* Puce */
+.maintenance-features li::before {
+    content: "•";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #7c3aed;
+
+    font-weight: 900;
+}
+
+/* Featured text */
+.maintenance-card.featured .maintenance-features li {
+    color: rgba(255,255,255,.92);
+}
+
+.maintenance-card.featured .maintenance-features li::before {
+    color: white;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .maintenance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .maintenance-card.featured {
+        transform: none;
+    }
+
+}
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 120px 0 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2e1065 0%,
+            #4c1d95 50%,
+            #6d28d9 100%
+        );
+
+    color: white;
+}
+
+
+/* Glow footer */
+.site-footer::before {
+    content: "";
+
+    position: absolute;
+
+    top: -120px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 600px;
+    height: 600px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,.12),
+            transparent 70%
+        );
+
+    filter: blur(80px);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   FOOTER GRID
+========================================================= */
+
+.footer-grid {
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 60px;
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.footer-brand h3 {
+    font-size: 2rem;
+
+    font-weight: 900;
+
+    margin-bottom: 22px;
+}
+
+.footer-brand p {
+    max-width: 360px;
+
+    line-height: 1.8;
+
+    color: rgba(255,255,255,.75);
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.footer-links h4 {
+    font-size: 1.1rem;
+
+    font-weight: 800;
+
+    margin-bottom: 22px;
+}
+
+.footer-links ul {
+    padding: 0;
+
+    margin: 0;
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 14px;
+}
+
+/* Liens */
+.footer-links a,
+.footer-links li {
+    color: rgba(255,255,255,.72);
+
+    text-decoration: none;
+
+    transition:
+        color .25s ease,
+        transform .25s ease;
+}
+
+/* Hover */
+.footer-links a:hover {
+    color: white;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.footer-bottom {
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 80px;
+
+    padding-top: 28px;
+
+    border-top:
+        1px solid rgba(255,255,255,.12);
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    color: rgba(255,255,255,.65);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+}
+/* =========================================================
+   NAVBAR LOGO
+========================================================= */
+
+/* =========================================================
+   NAVBAR LOGO
+========================================================= */
+
+.navbar-logo {
+    width: 58px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(0 0 12px rgba(168,85,247,.45));
+}
+.navbar-brand {
+    gap: 14px;
+
+    font-size: 1.5rem;
+}
+/* =========================================================
+   FOOTER LOGO
+========================================================= */
+
+.footer-brand-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    margin-bottom: 22px;
+}
+
+.footer-logo {
+    width: 72px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(0 0 18px rgba(168,85,247,.45));
+}
+/* =========================================================
+   NEON BUTTON EFFECT
+========================================================= */
+
+.portfolio-btn,
+.btn-primary,
+.btn-light {
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+/* Halo néon */
+.portfolio-btn::before,
+.btn-primary::before,
+.btn-light::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -2px;
+
+    border-radius: inherit;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(168,85,247,.0),
+            rgba(168,85,247,.45),
+            rgba(236,72,153,.35),
+            rgba(168,85,247,.0)
+        );
+
+    opacity: 0;
+
+    transition: opacity .35s ease;
+
+    z-index: -1;
+
+    filter: blur(12px);
+}
+
+/* Hover glow */
+.portfolio-btn:hover::before,
+.btn-primary:hover::before,
+.btn-light:hover::before {
+    opacity: 1;
+}
+
+/* Léger lift */
+.portfolio-btn:hover,
+.btn-primary:hover,
+.btn-light:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 24px rgba(168,85,247,.28);
+}
+/* =========================================================
+   FOOTER NEON LINKS
+========================================================= */
+
+.footer-links a:hover {
+    color: white;
+
+    text-shadow:
+        0 0 8px rgba(255,255,255,.6),
+        0 0 18px rgba(168,85,247,.45);
+
+    transform: translateX(4px);
+}
+/* =========================================================
+   NAVBAR NEON HOVER
+========================================================= */
+
+.nav-link:hover {
+    color: #a855f7;
+
+    text-shadow:
+        0 0 12px rgba(168,85,247,.45);
 }
