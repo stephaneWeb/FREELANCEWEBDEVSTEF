@@ -2131,3 +2131,36 @@ body::before {
     text-shadow:
         0 0 12px rgba(168,85,247,.45);
 }
+/* =========================================================
+   HERO NEON BACKGROUND EFFECT
+========================================================= */
+
+.hero-neon {
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(236,72,153,.35),
+            rgba(168,85,247,.20),
+            transparent 70%
+        );
+
+    filter: blur(70px);
+
+    opacity: .7;
+
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+
+    transition:
+        opacity .3s ease;
+
+    z-index: 1;
+}
