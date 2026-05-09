@@ -1,20 +1,16 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Développeur Symfony Freelance
+{% block title %}Atelier Halo | Développeur Symfony Freelance
 {% endblock %}
 
 {% block body %}
 
 	<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
 		<div class="container">
-			<a class="navbar-brand d-flex align-items-center gap-3" href="#">
 
+			<a class="navbar-brand d-flex align-items-center gap-3" href="{{ path('app_home') }}">
 				<img src="{{ asset('images/logo-atelier-halo.webp') }}" alt="Atelier Halo" class="navbar-logo">
-
-				<span class="fw-bold">
-					Atelier Halo
-				</span>
-
+				<span class="fw-bold">Atelier Halo</span>
 			</a>
 
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
@@ -30,121 +26,97 @@
 						<a class="nav-link" href="#portfolio">Portfolio</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
+						<a class="nav-link" href="#pricing">Tarifs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{{ path('app_contact') }}">Contact</a>
 					</li>
 				</ul>
 			</div>
+
 		</div>
 	</nav>
 
 	<section class="hero-section">
 		<div class="hero-neon"></div>
+
 		<div class="container">
-
 			<div class="hero-panel">
-
-				<div
-					class="row align-items-center g-5">
-
-					<!-- =====================================
-																																																		                     TEXTE HERO
-																																																		                ====================================== -->
+				<div class="row align-items-center g-5">
 
 					<div class="col-lg-7">
-
 						<div class="hero-content">
+							<span class="hero-badge">Développeur PHP Symfony</span>
 
-							<span class="hero-badge">
-								Développeur PHP Symfony
-							</span>
-
-							<h1>
-								Je crée des sites web clairs,
-																																																																																                            rapides et professionnels.
-							</h1>
+							<h1>Je crée des sites web clairs, rapides et professionnels.</h1>
 
 							<p>
 								J’aide les indépendants et petites entreprises
-																																																																																                            à obtenir un site moderne et pensé pour convertir.
+																																																																																																																																																																																																																																																																																																																																																																																                            à obtenir un site moderne et pensé pour convertir.
 							</p>
 
 							<div class="hero-actions">
-
-								<a href="#contact" class="btn btn-light btn-lg">
+								<a href="{{ path('app_contact') }}" class="btn btn-light btn-lg">
 									Discuter de votre projet
 								</a>
 
 								<a href="#services" class="btn btn-outline-light btn-lg">
 									Voir mes services
 								</a>
-
 							</div>
-
 						</div>
-
 					</div>
 
-
-					<!-- =====================================
-																																																		                     AVATAR HERO
-																																																		                ====================================== -->
-
 					<div class="col-lg-5">
-
 						<div class="hero-avatar-wrapper">
-
-							<img src="{{ asset('images/DEVSTEF.webp') }}" alt="StephDev" class="hero-avatar">
-
+							<img src="{{ asset('images/DEVSTEF.webp') }}" alt="Développeur Atelier Halo" class="hero-avatar">
 						</div>
-
 					</div>
 
 				</div>
-
 			</div>
-
 		</div>
-
 	</section>
+
 	<section id="services" class="services-section">
 		<div class="container">
 
-			<div class="section-heading">
+			<div class="section-heading fade-up">
 				<span class="section-badge">Services</span>
 				<h2>Des solutions simples pour un site efficace.</h2>
 				<p>
 					Je vous accompagne de la création à la mise en ligne,
-																																																																																																																																																																															                avec un site propre, rapide et pensé pour vos clients.
+																																																																																																																																																																																																																																						                avec un site propre, rapide et pensé pour vos clients.
 				</p>
 			</div>
 
 			<div class="row g-4">
 				<div class="col-md-4">
-					<div class="service-card">
+					<div class="service-card fade-up">
 						<h3>Site vitrine</h3>
 						<p>
 							Un site clair et professionnel pour présenter votre activité
-																																																																																																																																																																																																																																																					                        et donner confiance à vos visiteurs.
+																																																																																																																																																																																																																																																																																																																																		                        et donner confiance à vos visiteurs.
 						</p>
 					</div>
 				</div>
 
 				<div class="col-md-4">
-					<div class="service-card">
+					<div class="service-card fade-up">
 						<h3>Refonte</h3>
 						<p>
 							Modernisation d’un site existant : design, vitesse,
-																																																																																																																																																																																																																																																					                        responsive mobile et meilleure clarté.
+																																																																																																																																																																																																																																																																																																																																		                        responsive mobile et meilleure clarté.
 						</p>
 					</div>
 				</div>
 
 				<div class="col-md-4">
-					<div class="service-card">
+					<div class="service-card fade-up">
 						<h3>Symfony sur mesure</h3>
 						<p>
 							Développement d’outils spécifiques : espace admin,
-																																																																																																																																																																																																																																																					                        formulaires, gestion de contenu ou fonctionnalités métier.
+																																																																																																																																																																																																																																																																																																																																		                        formulaires, gestion de contenu ou fonctionnalités métier.
 						</p>
 					</div>
 				</div>
@@ -152,25 +124,24 @@
 
 		</div>
 	</section>
+
 	<section id="why-me" class="why-section">
 		<div class="container">
 
 			<div class="row align-items-center g-5">
-
-				<div class="col-lg-6">
+				<div class="col-lg-6 fade-up">
 					<span class="section-badge">Pourquoi me choisir</span>
 
 					<h2>Un site propre, rapide et pensé pour durer.</h2>
 
 					<p>
 						Je ne crée pas seulement un joli site. Je développe une base solide,
-																																																																																																																																																																																																												                    claire et maintenable, pensée pour évoluer avec votre activité.
+																																																																																																																																																																																																																																																																																				                    claire et maintenable, pensée pour évoluer avec votre activité.
 					</p>
 				</div>
 
 				<div class="col-lg-6">
 					<div class="why-list">
-
 						<div class="why-item fade-right">
 							<strong>Code propre</strong>
 							<span>Une structure claire avec Symfony, facile à maintenir.</span>
@@ -190,32 +161,28 @@
 							<strong>Accompagnement</strong>
 							<span>Je vous aide à comprendre les choix techniques et la mise en ligne.</span>
 						</div>
-
 					</div>
 				</div>
-
 			</div>
 
 		</div>
 	</section>
+
 	<section id="portfolio" class="portfolio-section">
 		<div class="container">
 
 			<div class="section-heading fade-up">
 				<span class="section-badge">Avant / Après</span>
-
 				<h2>Refonte complète d’un projet web.</h2>
-
 				<p>
 					Modernisation du design, amélioration de l’expérience utilisateur,
-																																																																																					                responsive mobile et développement Symfony.
+																																																																																																																																																																																																																																						                responsive mobile et développement Symfony.
 				</p>
 			</div>
 
 			<div class="portfolio-card fade-up">
 
 				<div class="row g-4">
-
 					<div class="col-lg-6">
 						<div class="project-card">
 							<span class="project-state old">Ancienne version</span>
@@ -247,7 +214,6 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 
 				<div class="project-details">
@@ -257,8 +223,8 @@
 
 					<p>
 						Refonte complète d’un site professionnel avec gestion de contenu,
-																																																																																																						                    blog SEO, commentaires, responsive mobile, backoffice EasyAdmin,
-																																																																																																						                    déploiement OVH, VPS Ubuntu et sécurité serveur.
+																																																																																																																																																																																																																																																																																				                    blog SEO, commentaires, responsive mobile, backoffice EasyAdmin,
+																																																																																																																																																																																																																																																																																				                    déploiement OVH, VPS Ubuntu et sécurité serveur.
 					</p>
 
 					<div class="project-tags">
@@ -281,428 +247,172 @@
 
 		</div>
 	</section>
+
 	<section id="process" class="process-section">
-
-		<div
-			class="container">
-
-			<!-- =========================================
-																																							             TITRE SECTION
-																																							        ========================================== -->
+		<div class="container">
 
 			<div class="section-heading fade-up">
-
-				<span class="section-badge">
-					Méthode de travail
-				</span>
-
-				<h2>
-					Une approche agile et structurée.
-				</h2>
-
+				<span class="section-badge">Méthode de travail</span>
+				<h2>Une approche agile et structurée.</h2>
 				<p>
 					Chaque projet avance étape par étape avec des échanges réguliers,
-																																																																	                afin de garantir un résultat clair, moderne et adapté à vos besoins.
+																																																																																																																																																																																																																																						                afin de garantir un résultat clair, moderne et adapté à vos besoins.
 				</p>
-
 			</div>
 
-
-			<!-- =========================================
-																																							             TIMELINE PROCESS
-																																							        ========================================== -->
-
-			<div
-				class="process-grid">
-
-				<!-- =========================================
-																																																				                 ETAPE 1
-																																																				            ========================================== -->
-
+			<div class="process-grid">
 				<div class="process-card fade-up">
-
-					<div class="process-number">
-						01
-					</div>
-
-					<h3>
-						Analyse du besoin
-					</h3>
-
-					<p>
-						Discussion autour de votre activité, de vos objectifs
-																																																																														                    et des fonctionnalités nécessaires au projet.
-					</p>
-
+					<div class="process-number">01</div>
+					<h3>Analyse du besoin</h3>
+					<p>Discussion autour de votre activité, de vos objectifs et des fonctionnalités nécessaires au projet.</p>
 				</div>
 
-
-				<!-- =========================================
-																																																				                 ETAPE 2
-																																																				            ========================================== -->
-
 				<div class="process-card fade-up">
-
-					<div class="process-number">
-						02
-					</div>
-
-					<h3>
-						Structure & UX
-					</h3>
-
-					<p>
-						Organisation du contenu, réflexion sur l’expérience utilisateur
-																																																																														                    et préparation de la structure du site.
-					</p>
-
+					<div class="process-number">02</div>
+					<h3>Structure & UX</h3>
+					<p>Organisation du contenu, réflexion sur l’expérience utilisateur et préparation de la structure du site.</p>
 				</div>
 
-
-				<!-- =========================================
-																																																				                 ETAPE 3
-																																																				            ========================================== -->
-
 				<div class="process-card fade-up">
-
-					<div class="process-number">
-						03
-					</div>
-
-					<h3>
-						Développement agile
-					</h3>
-
-					<p>
-						Création progressive du projet avec validations régulières
-																																																																														                    et ajustements selon vos retours.
-					</p>
-
+					<div class="process-number">03</div>
+					<h3>Développement agile</h3>
+					<p>Création progressive du projet avec validations régulières et ajustements selon vos retours.</p>
 				</div>
 
-
-				<!-- =========================================
-																																																				                 ETAPE 4
-																																																				            ========================================== -->
-
 				<div class="process-card fade-up">
-
-					<div class="process-number">
-						04
-					</div>
-
-					<h3>
-						Mise en ligne
-					</h3>
-
-					<p>
-						Déploiement sur VPS/OVH, optimisation des performances
-																																																																														                    et accompagnement pour la mise en production.
-					</p>
-
+					<div class="process-number">04</div>
+					<h3>Mise en ligne</h3>
+					<p>Déploiement sur VPS/OVH, optimisation des performances et accompagnement pour la mise en production.</p>
 				</div>
-
 			</div>
 
 		</div>
-
 	</section>
+
 	<section id="pricing" class="pricing-section">
-
-		<div
-			class="container">
-
-			<!-- =========================================
-																																	             TITRE SECTION
-																																	        ========================================== -->
+		<div class="container">
 
 			<div class="section-heading fade-up">
-
-				<span class="section-badge">
-					Tarifs
-				</span>
-
-				<h2>
-					Des prestations claires et adaptées.
-				</h2>
-
+				<span class="section-badge">Tarifs</span>
+				<h2>Des prestations claires et adaptées.</h2>
 				<p>
 					Chaque projet est différent, mais voici une estimation
-																																																							                des prestations les plus courantes.
+																																																																																																																																																																																																																																						                des prestations les plus courantes.
 				</p>
-
 			</div>
 
-
-			<!-- =========================================
-																																	             GRID TARIFS
-																																	        ========================================== -->
-
-			<div
-				class="pricing-grid">
-
-				<!-- =========================================
-																																												                 CARD 1
-																																												            ========================================== -->
-
+			<div class="pricing-grid">
 				<div class="pricing-card fade-up">
-
-					<span class="pricing-type">
-						Site vitrine
-					</span>
-
-					<div class="pricing-price">
-						À partir de 600€
-					</div>
-
-					<p>
-						Présentation professionnelle de votre activité
-																																																																		                    avec responsive mobile et optimisation de base.
-					</p>
+					<span class="pricing-type">Site vitrine</span>
+					<div class="pricing-price">À partir de 600€</div>
+					<p>Présentation professionnelle de votre activité avec responsive mobile et optimisation de base.</p>
 
 					<ul class="pricing-features">
-
 						<li>Responsive mobile</li>
-
 						<li>Design moderne</li>
-
 						<li>SEO de base</li>
-
 						<li>Mise en ligne</li>
-
 					</ul>
-
 				</div>
-
-
-				<!-- =========================================
-																																												                 CARD 2 POPULAIRE
-																																												            ========================================== -->
 
 				<div class="pricing-card featured fade-up">
-
-					<div class="featured-badge">
-						Le plus demandé
-					</div>
-
-					<span class="pricing-type">
-						Refonte complète
-					</span>
-
-					<div class="pricing-price">
-						À partir de 900€
-					</div>
-
-					<p>
-						Modernisation d’un site existant avec amélioration
-																																																																		                    du design, des performances et du responsive.
-					</p>
+					<div class="featured-badge">Le plus demandé</div>
+					<span class="pricing-type">Refonte complète</span>
+					<div class="pricing-price">À partir de 900€</div>
+					<p>Modernisation d’un site existant avec amélioration du design, des performances et du responsive.</p>
 
 					<ul class="pricing-features">
-
 						<li>Refonte UI/UX</li>
-
 						<li>Optimisation performance</li>
-
 						<li>Responsive complet</li>
-
 						<li>Accompagnement</li>
-
 					</ul>
-
 				</div>
-
-
-				<!-- =========================================
-																																												                 CARD 3
-																																												            ========================================== -->
 
 				<div class="pricing-card fade-up">
-
-					<span class="pricing-type">
-						Symfony sur mesure
-					</span>
-
-					<div class="pricing-price">
-						Sur devis
-					</div>
-
-					<p>
-						Développement spécifique : backoffice,
-																																																																		                    espace membre, outils métier ou fonctionnalités avancées.
-					</p>
+					<span class="pricing-type">Symfony sur mesure</span>
+					<div class="pricing-price">Sur devis</div>
+					<p>Développement spécifique : backoffice, espace membre, outils métier ou fonctionnalités avancées.</p>
 
 					<ul class="pricing-features">
-
 						<li>Backoffice EasyAdmin</li>
-
 						<li>Fonctionnalités avancées</li>
-
 						<li>Architecture Symfony</li>
-
 						<li>VPS & sécurité</li>
-
 					</ul>
-
 				</div>
-
 			</div>
 
 		</div>
-
 	</section>
+
 	<section class="maintenance-section">
-
-		<div
-			class="container">
-
-			<!-- =========================================
-																					             TITRE SECTION
-																					        ========================================== -->
-
-			<div class="section-heading text-center fade-up">
-
-				<span class="section-badge">
-					Maintenance
-				</span>
-
-				<h2>
-					Un suivi pour garder votre site performant.
-				</h2>
-
-				<p>
-					Après la mise en ligne, je peux continuer à assurer
-																																			                les mises à jour, la sécurité et l’évolution du site.
-				</p>
-
-			</div>
-
-
-			<!-- =========================================
-																					             GRID MAINTENANCE
-																					        ========================================== -->
-
-			<div
-				class="maintenance-grid">
-
-				<!-- =====================================
-																												                 CARD ESSENTIELLE
-																												            ====================================== -->
-
-				<div class="maintenance-card fade-up">
-
-					<span class="maintenance-type">
-						Essentielle
-					</span>
-
-					<div class="maintenance-price">
-						29€/mois
-					</div>
-
-					<ul class="maintenance-features">
-
-						<li>Mises à jour</li>
-
-						<li>Sauvegardes régulières</li>
-
-						<li>Surveillance du site</li>
-
-						<li>Support email</li>
-
-					</ul>
-
-				</div>
-
-
-				<!-- =====================================
-																												                 CARD PRO
-																												            ====================================== -->
-
-				<div class="maintenance-card featured fade-up">
-
-					<div class="featured-badge">
-						Recommandé
-					</div>
-
-					<span class="maintenance-type">
-						Pro
-					</span>
-
-					<div class="maintenance-price">
-						59€/mois
-					</div>
-
-					<ul class="maintenance-features">
-
-						<li>Tout l’essentiel</li>
-
-						<li>Petites modifications</li>
-
-						<li>Optimisation performance</li>
-
-						<li>Sécurité renforcée</li>
-
-					</ul>
-
-				</div>
-
-
-				<!-- =====================================
-																												                 CARD SUR MESURE
-																												            ====================================== -->
-
-				<div class="maintenance-card fade-up">
-
-					<span class="maintenance-type">
-						Sur mesure
-					</span>
-
-					<div class="maintenance-price">
-						Sur devis
-					</div>
-
-					<ul class="maintenance-features">
-
-						<li>Accompagnement personnalisé</li>
-
-						<li>Fonctionnalités spécifiques</li>
-
-						<li>Support prioritaire</li>
-
-						<li>Évolution du projet</li>
-
-					</ul>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</section>
-	<section class="stack-section">
-
 		<div class="container">
 
 			<div class="section-heading text-center fade-up">
+				<span class="section-badge">Maintenance</span>
+				<h2>Un suivi pour garder votre site performant.</h2>
+				<p>
+					Après la mise en ligne, je peux continuer à assurer
+																																																																																																																																																																																																																																						                les mises à jour, la sécurité et l’évolution du site.
+				</p>
+			</div>
 
-				<span class="section-badge">
-					Stack technique
-				</span>
+			<div class="maintenance-grid">
+				<div class="maintenance-card fade-up">
+					<span class="maintenance-type">Essentielle</span>
+					<div class="maintenance-price">29€/mois</div>
 
-				<h2>
-					Des technologies modernes et fiables.
-				</h2>
+					<ul class="maintenance-features">
+						<li>Mises à jour</li>
+						<li>Sauvegardes régulières</li>
+						<li>Surveillance du site</li>
+						<li>Support email</li>
+					</ul>
+				</div>
 
+				<div class="maintenance-card featured fade-up">
+					<div class="featured-badge">Recommandé</div>
+					<span class="maintenance-type">Pro</span>
+					<div class="maintenance-price">59€/mois</div>
+
+					<ul class="maintenance-features">
+						<li>Tout l’essentiel</li>
+						<li>Petites modifications</li>
+						<li>Optimisation performance</li>
+						<li>Sécurité renforcée</li>
+					</ul>
+				</div>
+
+				<div class="maintenance-card fade-up">
+					<span class="maintenance-type">Sur mesure</span>
+					<div class="maintenance-price">Sur devis</div>
+
+					<ul class="maintenance-features">
+						<li>Accompagnement personnalisé</li>
+						<li>Fonctionnalités spécifiques</li>
+						<li>Support prioritaire</li>
+						<li>Évolution du projet</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="stack-section">
+		<div class="container">
+
+			<div class="section-heading text-center fade-up">
+				<span class="section-badge">Stack technique</span>
+				<h2>Des technologies modernes et fiables.</h2>
 				<p>
 					Développement web professionnel avec une stack solide,
-																																								                pensée pour la performance, la maintenance et l’évolution.
+																																																																																																																																																																																																																																						                pensée pour la performance, la maintenance et l’évolution.
 				</p>
-
 			</div>
 
 			<div class="stack-grid fade-up">
-
 				<span>Symfony</span>
 				<span>PHP</span>
 				<span>EasyAdmin</span>
@@ -715,89 +425,59 @@
 				<span>OVH</span>
 				<span>Git</span>
 				<span>SEO</span>
-
 			</div>
 
 		</div>
-
 	</section>
-	<section id="contact" class="contact-section">
 
+	<section class="contact-section">
 		<div class="container">
 
 			<div class="contact-panel fade-up">
+				<span class="contact-badge">Contact</span>
 
-				<span class="contact-badge">
-					Contact
-				</span>
-
-				<h2>
-					Vous avez un projet web ?
-				</h2>
+				<h2>Vous avez un projet web ?</h2>
 
 				<p>
 					Site vitrine, refonte, application Symfony ou mise en ligne :
-																																																												                expliquez-moi votre besoin et je vous répondrai avec une première analyse claire.
+																																																																																																																																																																																																																																						                expliquez-moi votre besoin via le formulaire de contact.
 				</p>
 
 				<div class="contact-actions">
-
-					<a href="mailto:tonemail@example.com" class="btn btn-light btn-lg">
-						Me contacter
+					<a href="{{ path('app_contact') }}" class="btn btn-light btn-lg">
+						Accéder au formulaire
 					</a>
 
 					<a href="#services" class="btn btn-outline-light btn-lg">
 						Revoir les services
 					</a>
-
 				</div>
-
 			</div>
 
 		</div>
-
 	</section>
-	<footer class="site-footer">
 
+	<footer class="site-footer">
 		<div class="container">
 
-			<div
-				class="footer-grid">
-
-				<!-- =====================================
-																								                 BRAND
-																								            ====================================== -->
+			<div class="footer-grid">
 
 				<div class="footer-brand">
-
 					<div class="footer-brand-title">
-
 						<img src="{{ asset('images/logo-atelier-halo.webp') }}" alt="Atelier Halo" class="footer-logo">
-
-						<h3>
-							Atelier Halo
-						</h3>
-
+						<h3>Atelier Halo</h3>
 					</div>
 
 					<p>
 						Développeur Symfony freelance spécialisé
-																																				                    dans la création de sites modernes,
-																																				                    rapides et professionnels.
+																																																																																																																																																																																																																																																																																				                    dans la création de sites modernes,
+																																																																																																																																																																																																																																																																																				                    rapides et professionnels.
 					</p>
-
 				</div>
-
-
-				<!-- =====================================
-																								                 NAVIGATION
-																								            ====================================== -->
 
 				<div class="footer-links">
 
-					<h4>
-						Navigation
-					</h4>
+					<h4>Navigation</h4>
 
 					<ul>
 
@@ -807,84 +487,41 @@
 
 						<li><a href="#pricing">Tarifs</a></li>
 
-						<li><a href="#contact">Contact</a></li>
-
 					</ul>
 
 				</div>
 
-
-				<!-- =====================================
-																								                 STACK
-																								            ====================================== -->
-
 				<div class="footer-links">
-
-					<h4>
-						Technologies
-					</h4>
+					<h4>Technologies</h4>
 
 					<ul>
-
 						<li>Symfony</li>
-
 						<li>PHP</li>
-
 						<li>EasyAdmin</li>
-
 						<li>MySQL</li>
-
 						<li>Linux VPS</li>
-
 					</ul>
-
 				</div>
 
-
-				<!-- =====================================
-																								                 CONTACT
-																								            ====================================== -->
-
 				<div class="footer-links">
-
-					<h4>
-						Contact
-					</h4>
+					<h4>Contact</h4>
 
 					<ul>
-
 						<li>
-							contact@atelierhalo.fr
+							<a href="{{path('app_contact')}}">Contact</a>
 						</li>
-
-						<li>
-							France
-						</li>
-
-						<li>
-							Freelance Symfony
-						</li>
-
+						<li>France</li>
+						<li>Freelance Symfony</li>
 					</ul>
-
 				</div>
 
 			</div>
 
-
-			<!-- =====================================
-																		             BOTTOM
-																		        ====================================== -->
-
 			<div class="footer-bottom">
-
-				<p>
-					© 2026 Atelier Halo — Développeur Symfony Freelance
-				</p>
-
+				<p>© 2026 Atelier Halo — Développeur Symfony Freelance</p>
 			</div>
 
 		</div>
-
 	</footer>
+
 {% endblock %}
