@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+	</head>
+
+	<body style="font-family: Arial, sans-serif; background:#f5f3ff; padding:40px;">
+		<div style="max-width:700px; margin:auto; background:white; padding:40px; border-radius:24px; box-shadow:0 10px 30px rgba(0,0,0,.08);">
+
+			<h1 style="color:#7c3aed; margin-bottom:30px;">
+				Nouveau message Atelier Halo ✨
+			</h1>
+
+			<p>
+				<strong>Nom :</strong><br>{{ data.name }}</p>
+			<p>
+				<strong>Email :</strong><br>{{ data.email }}</p>
+			<p>
+				<strong>Sujet :</strong><br>{{ data.subject }}</p>
+
+			<hr style="margin:30px 0;">
+
+			<p>
+				<strong>Message :</strong>
+			</p>
+
+			<div style="line-height:1.8; color:#374151;">
+				{{ data.message|nl2br }}
+			</div>
+
+		</div>
+	</body>
+</html>
