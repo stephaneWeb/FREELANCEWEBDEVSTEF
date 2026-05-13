@@ -47,7 +47,11 @@ class ContactController extends AbstractController
 
                 return $this->redirectToRoute('app_contact');
             }
+            if ($form->has('website') && !empty($form->get('website')->getData())) {
+    $this->addFlash('success', 'Ton message a bien été envoyé ✨');
 
+    return $this->redirectToRoute('app_contact');
+}
             if ($form->isValid()) {
                 $mailerService->sendContactEmail($form->getData());
 

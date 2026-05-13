@@ -21,14 +21,127 @@
 		<link rel="canonical" href="https://atelierhalo.fr/">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon"
+      href="{{ asset('favicon/favicon.ico') }}">
 
+<link rel="icon" type="image/png" sizes="32x32"
+      href="{{ asset('favicon/favicon-32x32.png') }}">
+
+<link rel="icon" type="image/png" sizes="16x16"
+      href="{{ asset('favicon/favicon-16x16.png') }}">
+
+<link rel="apple-touch-icon"
+      href="{{ asset('favicon/apple-touch-icon.png') }}">
 		{{ encore_entry_link_tags('app') }}
 	</head>
 
 	<body>
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+		<div class="container">
 
+			<a class="navbar-brand d-flex align-items-center gap-3" href="{{ path('app_home') }}">
+				<img src="{{ asset('images/logo-atelier-halo.webp') }}" alt="Atelier Halo" class="navbar-logo">
+				<span class="fw-bold">Atelier Halo</span>
+			</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse justify-content-end" id="navbarMain">
+				<ul class="navbar-nav gap-lg-4">
+					<li class="nav-item">
+						<a class="nav-link" href="{{ path('app_home') }}#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{{ path('app_home') }}#portfolio">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{{ path('app_home') }}#pricing">Tarifs</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="{{ path('app_contact') }}">Contact</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
 		{% block body %}{% endblock %}
+		<footer class="site-footer">
+			<div class="container">
 
+				<div class="footer-grid">
+
+					<div class="footer-brand">
+						<div class="footer-brand-title">
+							<img src="{{ asset('images/logo-atelier-halo.webp') }}" alt="Atelier Halo" class="footer-logo">
+							<h3>Atelier Halo</h3>
+						</div>
+
+						<p>
+							Développeur Symfony freelance spécialisé
+																																																																																																																																																																																																																																																																																																																														                    dans la création de sites modernes,
+																																																																																																																																																																																																																																																																																																																														                    rapides et professionnels.
+						</p>
+					</div>
+
+					<div class="footer-links">
+
+						<h4>Navigation</h4>
+
+						<ul>
+
+							<li><a href="{{ path('app_home') }}#services">Services</a></li>
+                            <li><a href="{{ path('app_home') }}#portfolio">Portfolio</a></li>
+                            <li><a href="{{ path('app_home') }}#pricing">Tarifs</a></li>
+
+
+
+						</ul>
+
+					</div>
+
+					<div class="footer-links">
+						<h4>Technologies</h4>
+
+						<ul>
+							<li>Symfony</li>
+							<li>PHP</li>
+							<li>EasyAdmin</li>
+							<li>MySQL</li>
+							<li>Linux VPS</li>
+						</ul>
+					</div>
+
+					<div class="footer-links">
+						<h4>Contact</h4>
+
+						<ul>
+							<li>
+								<a href="{{path('app_contact')}}">Contact</a>
+							</li>
+							<li>France</li>
+							<li>Freelance Symfony</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="footer-links">
+					<h4>Légal</h4>
+
+					<ul>
+
+						<li><a class="nav-link" href="{{path('app_cgv')}}">Conditions Générales de Vente</a></li>
+
+					</ul>
+				</div>
+				<div class="footer-bottom">
+					<p>© 2026 Atelier Halo — Développeur Symfony Freelance</p>
+				</div>
+
+			</div>
+		</footer>
 		{{ encore_entry_script_tags('app') }}
 
 	</body>
