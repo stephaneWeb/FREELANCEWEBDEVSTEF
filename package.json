@@ -7,6 +7,7 @@
         "regenerator-runtime": "^0.13.9",
         "sass": "^1.99.0",
         "sass-loader": "^16.0.7",
+        "serialize-javascript": "^6.0.2",
         "webpack": "^5.72",
         "webpack-cli": "^6.0.0"
     },
